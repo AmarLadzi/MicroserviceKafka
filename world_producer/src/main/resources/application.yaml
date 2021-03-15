@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  kafka:
+    producer:
+      bootstarp-servers: locahost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+# comment il arrive à retrouver des trucs ici, et comment cette chose là est appeler avec docker ?
